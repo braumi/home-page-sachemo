@@ -341,19 +341,45 @@ header .user {
 }
 .buttons a:hover {
   border: #111 solid 1px;
+}.buttons a:hover .container .description svg{
+  display: block;
 }
 .buttons a:nth-child(3n + 0) {
   margin-right: 0;
 }
-.buttons a .container {
+.buttons a .container  {
   display: flex;
   width: 100%;
-  margin: 32px auto 32px 32px;
+  margin: 32px 32px 32px 32px;
+  align-items: center;
 }
+.buttons a .container .description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.buttons a .container .description svg{
+display: none;
+}
+
+.buttons a .container h4 {
+  font-family: 'Noto Sans Georgian';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.buttons a .container p {
+  font-family: 'Noto Sans Georgian';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .buttons a .container .logoS {
   height: 56px;
   width: 56px;
-  border-radius: 28px;
+  border-radius: 100px;
   border: 1px #111 solid;
   display: flex;
   justify-content: center;
@@ -385,6 +411,7 @@ header .user {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 .know-more h1 {
   font-family: "Noto Sans Georgian";
