@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Noto Sans Georgian";
+  src: url(NotoSansGeorgian-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+a,
+a:any-link,
+button {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background: white;
+  border-bottom: 1px #ebebeb solid;
+  z-index: 1000;
+}
+header .hl,
+header .hr {
+  display: flex;
+}
+
+.hl div,
+.hr div {
+  width: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.hl .lan {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+header .cart,
+header .search {
+  border-left: 1px #ebebeb solid;
+  border-right: 1px #ebebeb solid;
+}
+.user h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Noto Sans Georgian";
+  font-variant-caps: all-small-caps;
+  text-transform: uppercase;
+}
+header .cart a {
+  display: flex;
+  align-items: center;
+}
+header .cart h4 {
+  margin-left: 8px;
+  font-size: 13px;
+}
+header .logo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  z-index: 1;
+}
+header .user {
+  width: 189px;
+}
+.gap {
+  height: 70px;
+  width: 100%;
+}
+.sec-header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px #ebebeb solid;
+}
+.sec-header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-header div a {
+  margin: 0px 20px;
+  font-family: "Noto Sans Georgian";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.slider {
+  width: 100%;
+  height: 420px;
+  padding-top: 20px;
+  display: flex;
+  position: relative;
+}
+.slider .arrows-cont {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  transform: translateY(17px);
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+}
+.slider .arrows {
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 193px;
+  height: 44px;
+  background: white;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+.arrowL::before,
+.arrowL::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  background: aqua;
+  width: 22px;
+  height: 44px;
+  left: -22px;
+}
+.arrowR::before,
+.arrowR::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  background: aqua;
+  width: 22px;
+  height: 44px;
+  right: -22px;
+}
+.arrowL::after {
+  border-end-end-radius: 22px;
+  background-color: white;
+}
+.arrowR::after {
+  border-bottom-left-radius: 22px;
+  background-color: white;
+}
+.slider .arrows h3 {
+  margin: 10px 32px;
+}
+.slider .arrows button {
+  height: 24px;
+  width: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.slider ul {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: scroll;
+  pointer-events: none;
+  overflow: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  transition: 0.2s;
+}
+.slider ul::-webkit-scrollbar {
+  display: none;
+}
+.slider ul li {
+  width: 1128px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.slider ul li div {
+  text-align: center;
+  width: 1080px;
+  height: 300px;
+  background-color: #d9d9d9;
+  margin: 0 12px;
+  /* display: none; */
+}
+.slider ul li .focused {
+  transition: 0.2s;
+  display: block;
+  height: 400px;
+  /* position: absolute; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+.item {
+  height: 347;
+  width: 307px;
+  background: white;
+  /* border: 1px solid #ebebeb; */
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: end;
+}
+.item:hover {
+  cursor: pointer;
+  /* box-shadow: 0px 0px 30px rgba(72, 102, 123, 0.3);
+  transition: 0.3s; */
+}
+.item img {
+  margin: 4px 7px 12px 4px;
+  width: 296px;
+}
+.item .desc {
+  margin-right: 7px;
+  margin-left: 4px;
+}
+.item .desc h3 {
+  font-weight: 600;
+  font-size: 12px;
+}
+.item .desc p {
+  margin-top: 4px;
+  font-family: "Noto Sans Georgian";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #858584;
+}
+.item .desc .price-fav {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.item .desc .price {
+  display: flex;
+}
+.item .desc .price h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.item .desc .price h3:nth-child(1) {
+  color: #858584;
+}
+.item .desc .price h3:nth-child(2) {
+  margin: 0 10px;
+}
+.item-list1 {
+  display: flex;
+  margin-top: 40px;
+  width: 1300px;
+  margin: 0 auto;
+}
+.main-body1,
+.main-body2 {
+  padding-bottom: 120px;
+  position: relative;
+}
+.main-body1 h1,
+.main-body2 h1,
+.main-body3 h1 {
+  font-family: "Noto Sans Georgian";
+  font-size: 30px;
+  font-weight: 600;
+  font-variant-caps: all-small-caps;
+  text-transform: uppercase;
+  width: 1300px;
+  margin: 63px auto 40px;
+  background: none;
+}
+.main-body2 h1 {
+  margin-top: 30px;
+}
+.main-body2 {
+  height: 455px;
+}
+.main-body2 .backg {
+  padding-top: 10px;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 148px;
+}
+
+.ad {
+  content: " ";
+  background: #ebebeb;
+  margin: 120px auto;
+  width: 1300px;
+  height: 400px;
+}
+
+.main-body3 .item-list2 {
+  display: flex;
+  margin-top: 40px;
+  width: 1300px;
+  margin: 32px auto 0;
+}
+
+.main-body3 {
+  margin-bottom: 120px;
+}
+
+.buttons {
+  margin: 120px auto 96px;
+  width: 1300px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buttons a {
+  width: 417px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #e6e6e6 solid 1px;
+  margin: 0 24px 24px 0;
+}
+.buttons a:hover {
+  border: #111 solid 1px;
+}
+.buttons a:nth-child(3n + 0) {
+  margin-right: 0;
+}
+.buttons a .container {
+  display: flex;
+  width: 100%;
+  margin: 32px auto 32px 32px;
+}
+.buttons a .container .logoS {
+  height: 56px;
+  width: 56px;
+  border-radius: 28px;
+  border: 1px #111 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.buttons a:nth-child(2) .logoS {
+  border: #ffc300 solid 1px;
+}
+.buttons a:nth-child(2) .logoS svg {
+  fill: #ffc300;
+}
+.buttons a:nth-child(6) .logoS {
+  border: #855be2 solid 1px;
+}
+.buttons a:nth-child(6) .logoS svg {
+  fill: #855be2;
+}
+.buttons a:nth-child(3) .logoS {
+  border: #ff5733 solid 1px;
+}
+
+.know-more {
+  margin: 0 auto;
+  width: 1300px;
+  height: 400px;
+  background-color: #ffc300;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.know-more h1 {
+  font-family: "Noto Sans Georgian";
+  font-size: 40px;
+  font-weight: 600;
+  font-variant-caps: all-small-caps;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+.know-more p {
+  width: 600px;
+  font-family: "Noto Sans Georgian";
+  font-size: 16px;
+  font-weight: 400;
+}
+.know-more button {
+  width: 150px;
+  height: 52px;
+  background-color: #111;
+  color: white;
+  font-family: "Noto Sans Georgian";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
