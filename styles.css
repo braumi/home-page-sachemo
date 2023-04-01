@@ -1,13 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @font-face {
-  font-family: "Noto Sans Georgian";
-  src: url(NotoSansGeorgian-Regular.ttf);
+  font-family: "firaGO-semibold";
+  src: url(FiraGO-SemiBold.ttf);
+}
+@font-face {
+  font-family: "firaGO-med";
+  src: url(FiraGO-Medium.ttf);
+}
+@font-face {
+  font-family: "firaGO-reg";
+  src: url(FiraGO-Regular.ttf);
+}
+@font-face {
+  font-family: "! BPG GEL v2";
+  src: url(!\ BPG\ GEL\ v2.ttf);
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "firaGo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
 }
 a,
 a:any-link,
@@ -18,6 +32,11 @@ button {
 }
 ul {
   list-style: none;
+}
+
+b{
+  font-family: "! BPG GEL v2";
+  font-weight: 600;
 }
 
 header {
@@ -55,11 +74,12 @@ header .search {
   border-right: 1px #ebebeb solid;
 }
 .user h3 {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Noto Sans Georgian";
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "firaGO-med";
   font-variant-caps: all-small-caps;
   text-transform: uppercase;
+  font-feature-settings: "case" on;
 }
 header .cart a {
   display: flex;
@@ -100,7 +120,7 @@ header .user {
 }
 .sec-header div a {
   margin: 0px 20px;
-  font-family: "Noto Sans Georgian";
+  font-family: "firaGO-med";
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -213,7 +233,7 @@ header .user {
 }
 
 .item {
-  height: 347;
+  height: auto;
   width: 307px;
   background: white;
   /* border: 1px solid #ebebeb; */
@@ -222,6 +242,7 @@ header .user {
   flex-direction: column;
   position: relative;
   align-items: end;
+  padding: 4px 4px 0 4px;
 }
 .item:hover {
   cursor: pointer;
@@ -229,20 +250,23 @@ header .user {
   transition: 0.3s; */
 }
 .item img {
-  margin: 4px 7px 12px 4px;
-  width: 296px;
+  margin-bottom:12px;
+  width:100%;
 }
 .item .desc {
   margin-right: 7px;
   margin-left: 4px;
 }
 .item .desc h3 {
-  font-weight: 600;
-  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "firaGO-med";
 }
 .item .desc p {
   margin-top: 4px;
-  font-family: "Noto Sans Georgian";
+  font-family: "firaGO-regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -284,14 +308,16 @@ header .user {
 .main-body1 h1,
 .main-body2 h1,
 .main-body3 h1 {
-  font-family: "Noto Sans Georgian";
-  font-size: 30px;
-  font-weight: 600;
+  font-family: "firaGO-med";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
   font-variant-caps: all-small-caps;
   text-transform: uppercase;
   width: 1300px;
   margin: 63px auto 40px;
   background: none;
+  font-feature-settings: "case" on;
 }
 .main-body2 h1 {
   margin-top: 30px;
@@ -359,19 +385,22 @@ header .user {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+
 }
 .buttons a .container .description svg{
 display: none;
 }
 
 .buttons a .container h4 {
-  font-family: 'Noto Sans Georgian';
+  font-family: 'firaGO-med';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
+  font-feature-settings: "case" on;
+  margin-bottom: 4px;
 }
 .buttons a .container p {
-  font-family: 'Noto Sans Georgian';
+  font-family: 'firaGO-regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -417,29 +446,30 @@ display: none;
   width: 420px;
 }
 .brands .con .text h3{
-  font-family: 'Noto Sans Georgian';
+  font-family: 'firaGO-med';
   font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  font-variant-caps: all-small-caps;
+  font-weight: 500;
+  font-size: 20px;
+  font-feature-settings: "case" on;
   margin-bottom: 16px;
 }
 .brands .con .text p{
-  font-family: 'Noto Sans Georgian';
+  font-family: 'firaGO-regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 140%;
   color: #999999;
 }
 .brands .con button{
   padding: 16px 32px;
   height: 100%;
-  font-family: 'Noto Sans Georgian';
+  font-family: 'firaGO-med';
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 14px;
   color: white;
-  font-variant-caps: all-small-caps;
+  font-feature-settings: "case" on;
   background-color: #111;
   cursor: pointer;
 }
@@ -455,18 +485,20 @@ display: none;
   margin-bottom: 120px;
 }
 .know-more h1 {
-  font-family: "Noto Sans Georgian";
-  font-size: 40px;
-  font-weight: 600;
-  font-variant-caps: all-small-caps;
+  font-family: "firaGO-med";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  font-feature-settings: "case" on;
   text-transform: uppercase;
   line-height: 40px;
   margin-bottom: 16px;
 }
 .know-more p {
-  width: 600px;
-  font-family: "Noto Sans Georgian";
+  width: 550px;
+  font-family: "firaGO-regular";
   font-size: 16px;
+  line-height: 140%;
   font-weight: 400;
 }
 .know-more button {
@@ -474,9 +506,10 @@ display: none;
   height: 52px;
   background-color: #111;
   color: white;
-  font-family: "Noto Sans Georgian";
+  font-family: "firaGO-med";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
+  font-feature-settings: "case" on;
   font-size: 14px;
   cursor: pointer;
 }
@@ -502,7 +535,7 @@ footer .contain .contacts{
 }
 footer .contain .contacts li a{
   margin-left: 40px;
-  font-family: 'Noto Sans Georgian';
+  font-family: 'firaGO-regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -518,11 +551,13 @@ footer .contain .items{
 }
 footer .contain .items li a{
   margin-left: 40px;
-  font-family: 'Noto Sans Georgian';
+  font-family: 'firaGO-med';
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 22px;
+  font-variant-caps: all-small-caps;
+  font-feature-settings: "case" on;
 }
 footer .contain svg{
   margin: 16px auto;
