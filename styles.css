@@ -157,7 +157,6 @@ header .user {
   height: auto;
   width: 307px;
   background: white;
-  /* border: 1px solid #ebebeb; */
   margin-right: 24px;
   display: flex;
   flex-direction: column;
