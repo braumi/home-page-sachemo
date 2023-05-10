@@ -128,109 +128,28 @@ header .user {
   text-align: left;
 }
 
-.slider {
-  width: 100%;
-  height: 420px;
-  padding-top: 20px;
-  display: flex;
-  position: relative;
-}
-.slider .arrows-cont {
-  justify-content: center;
-  display: flex;
-  width: 100%;
-  transform: translateY(17px);
-  position: absolute;
-  bottom: 0;
-  margin: 0 auto;
-}
-.slider .arrows {
-  bottom: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 193px;
-  height: 44px;
-  background: white;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
-}
-.arrowL::before,
-.arrowL::after {
-  display: block;
-  position: absolute;
-  content: " ";
-  background: aqua;
-  width: 22px;
-  height: 44px;
-  left: -22px;
-}
-.arrowR::before,
-.arrowR::after {
-  display: block;
-  position: absolute;
-  content: " ";
-  background: aqua;
-  width: 22px;
-  height: 44px;
-  right: -22px;
-}
-.arrowL::after {
-  border-end-end-radius: 22px;
-  background-color: white;
-}
-.arrowR::after {
-  border-bottom-left-radius: 22px;
-  background-color: white;
-}
-.slider .arrows h3 {
-  margin: 10px 32px;
-}
-.slider .arrows button {
-  height: 24px;
-  width: 24px;
-  border: none;
-  background: none;
-  cursor: pointer;
+
+.swiper {
+  width: 1400px;
+  height: 500px;
 }
 
-.slider ul {
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-  overflow-x: scroll;
-  pointer-events: none;
-  overflow: auto;
-  scroll-snap-type: mandatory;
-  scroll-behavior: smooth;
-  transition: 0.2s;
-}
-.slider ul::-webkit-scrollbar {
-  display: none;
-}
-.slider ul li {
-  width: 1128px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-}
-
-.slider ul li div {
+.swiper-slide {
   text-align: center;
-  width: 1080px;
-  height: 300px;
-  background-color: #d9d9d9;
-  margin: 0 12px;
-  /* display: none; */
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slider ul li .focused {
-  transition: 0.2s;
+
+.swiper-slide img {
   display: block;
-  height: 400px;
-  /* position: absolute; */
-  /* left: 50%;
-  transform: translateX(-50%); */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 
 .item {
   height: auto;
@@ -280,10 +199,11 @@ header .user {
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .item .desc .price {
   display: flex;
+  align-items: center;
 }
 .item .desc .price h3 {
   font-family: "Montserrat";
@@ -292,11 +212,102 @@ header .user {
   font-size: 20px;
   text-transform: uppercase;
 }
-.item .desc .price h3:nth-child(1) {
-  color: #858584;
+.item .desc .price h3:nth-child(3) {
+  color: #999999;
+  font-size: 16px;
 }
-.item .desc .price h3:nth-child(2) {
-  margin: 0 10px;
+.item .desc .price .dot{
+  content: ' ';
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #999999;;
+  margin:0 8px;
+}
+.item .desc .price-fav .fav{
+  width: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+.item .desc .price-fav .fav .added{
+  width: 24px;
+  cursor: pointer;
+}
+.item .desc .price-fav .fav .added svg:nth-child(2){
+  position: absolute;
+  fill: #111;
+}
+.item .desc .price-fav .fav .added svg:nth-child(1){
+  position: absolute;
+  display: none;
+}
+.item .desc .price-fav .fav .added:hover svg:nth-child(2){
+  fill: #fff;
+  display: none;
+}
+.item .desc .price-fav .fav .added:hover svg:nth-child(1){
+  fill: #111;
+  display: block;
+}
+.item .desc .price-fav .fav .add-to-cart{
+  width: 24px;
+  cursor: pointer;
+}
+.item .desc .price-fav .fav .add-to-cart svg:nth-child(1){
+  position: absolute;
+  fill: #111;
+}
+.item .desc .price-fav .fav .add-to-cart svg:nth-child(2){
+  position: absolute;
+  display: none;
+}
+.item .desc .price-fav .fav .add-to-cart:hover svg:nth-child(1){
+  fill: #fff;
+  display: none;
+}
+.item .desc .price-fav .fav .add-to-cart:hover svg:nth-child(2){
+  fill: #111;
+  display: block;
+}
+.item .desc .price-fav .fav .favorited{
+  width: 24px;
+  cursor: pointer;
+}
+.favorited svg:nth-child(1){
+  position: absolute;
+  display: none;
+}
+.favorited svg:nth-child(2){
+  position: absolute;
+  fill: #111;
+}
+.favorited:hover svg:nth-child(1){
+  fill: #111;
+  display: block;
+}
+.item .desc .price-fav .fav .favorited:hover svg:nth-child(2){
+  fill: #fff;
+  display: none;
+}
+.item .desc .price-fav .fav .favorites{
+  width: 24px;
+  cursor: pointer;
+}
+.item .desc .price-fav .fav .favorites svg:nth-child(1){
+  position: absolute;
+  fill: #111;
+}
+.item .desc .price-fav .fav .favorites svg:nth-child(2){
+  position: absolute;
+  display: none;
+}
+.item .desc .price-fav .fav .favorites:hover svg:nth-child(1){
+  fill: #fff;
+  display: none;
+}
+.item .desc .price-fav .fav .favorites:hover svg:nth-child(2){
+  fill: #111;
+  display: block;
 }
 .item-list1 {
   display: flex;
