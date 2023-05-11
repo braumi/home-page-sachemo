@@ -100,7 +100,7 @@ header .searching input:focus {
 }
 header .searching button {
   display: block;
-  margin-left:15px;
+  margin-left: 15px;
   background: none;
   cursor: pointer;
 }
