@@ -1,5 +1,6 @@
 const favorited = document.querySelectorAll(".fav .favorites");
 const added = document.querySelectorAll(".fav .add-to-cart");
+const search = document.querySelectorAll(".search")
 let i = 0;
 
 favorited.forEach((svg) => {
@@ -34,3 +35,20 @@ added.forEach((svg) => {
     }
   })
 })
+
+document.querySelector(".search svg").addEventListener("click", () =>{
+  if(document.querySelector(".search").classList.contains("searching")==false){
+    document.querySelector(".search").classList.add("searching");
+  }
+}
+)
+document.querySelector(".search button").addEventListener("click", () =>{
+  if(document.querySelector(".search").classList.contains("searching")==true){
+    document.querySelector(".search").classList.remove("searching");
+  }
+}
+)
+
+
+
+

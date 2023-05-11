@@ -34,7 +34,7 @@ ul {
   list-style: none;
 }
 
-b{
+b {
   font-family: "! BPG GEL v2";
   font-weight: 600;
 }
@@ -72,6 +72,33 @@ header .cart,
 header .search {
   border-left: 1px #ebebeb solid;
   border-right: 1px #ebebeb solid;
+}
+header .search input,
+header .search button {
+  display: none;
+}
+header .searching {
+  width: 283px;
+}
+header .searching input {
+  display: block;
+  margin-left: 12px;
+  width: 128px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #999999;
+  border: none;
+}
+header .searching input:focus {
+  outline: none;
+  color: #111;
+}
+header .searching button {
+  display: block;
+  margin: 0 20px 0 15px;
+  background: none;
+  cursor: pointer;
 }
 .user h3 {
   font-size: 14px;
@@ -128,7 +155,6 @@ header .user {
   text-align: left;
 }
 
-
 .swiper {
   width: 1400px;
   height: 500px;
@@ -138,7 +164,7 @@ header .user {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   border-radius: 1px;
   display: flex;
   justify-content: center;
@@ -151,7 +177,6 @@ header .user {
   height: 100%;
   object-fit: cover;
 }
-
 
 .item {
   height: auto;
@@ -174,8 +199,8 @@ header .user {
   cursor: pointer;
 }
 .item img {
-  margin-bottom:12px;
-  width:100%;
+  margin-bottom: 12px;
+  width: 100%;
 }
 .item .desc {
   margin-right: 7px;
@@ -217,35 +242,35 @@ header .user {
   color: #999999;
   font-size: 16px;
 }
-.item .desc .price .dot{
-  content: ' ';
+.item .desc .price .dot {
+  content: " ";
   height: 4px;
   width: 4px;
   border-radius: 2px;
-  background: #999999;;
-  margin:0 8px;
+  background: #999999;
+  margin: 0 8px;
 }
-.item:hover .desc .price-fav .fav{
+.item:hover .desc .price-fav .fav {
   width: 68px;
   display: flex;
   justify-content: space-between;
   transform: translateY(0px);
 }
-.item .desc .price-fav .fav{
+.item .desc .price-fav .fav {
   display: none;
   transition: 1s;
   transform: translateY(30px);
 }
-.item .desc .price-fav .fav .added{
+.item .desc .price-fav .fav .added {
   width: 24px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.item .desc .price-fav .fav .added svg:nth-child(2){
+.item .desc .price-fav .fav .added svg:nth-child(2) {
   position: absolute;
   fill: #111;
 }
-.item .desc .price-fav .fav .added svg:nth-child(1){
+.item .desc .price-fav .fav .added svg:nth-child(1) {
   position: absolute;
   display: none;
 }
@@ -257,45 +282,45 @@ header .user {
   fill: #111;
   display: block;
 } */
-.item .desc .price-fav .fav .add-to-cart{
+.item .desc .price-fav .fav .add-to-cart {
   width: 24px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-.item .desc .price-fav .fav .add-to-cart svg:nth-child(1){
+.item .desc .price-fav .fav .add-to-cart svg:nth-child(1) {
   position: absolute;
   fill: #111;
 }
-.item .desc .price-fav .fav .add-to-cart svg:nth-child(2){
+.item .desc .price-fav .fav .add-to-cart svg:nth-child(2) {
   position: absolute;
   display: none;
 }
-.item .desc .price-fav .fav .add-to-cart:hover svg:nth-child(1){
+.item .desc .price-fav .fav .add-to-cart:hover svg:nth-child(1) {
   fill: #fff;
   display: none;
 }
-.item .desc .price-fav .fav .add-to-cart:hover svg:nth-child(2){
+.item .desc .price-fav .fav .add-to-cart:hover svg:nth-child(2) {
   fill: #111;
   display: block;
 }
-.item .desc .price-fav .fav .favorited{
+.item .desc .price-fav .fav .favorited {
   width: 24px;
   cursor: pointer;
 }
-.favorited svg:nth-child(1){
+.favorited svg:nth-child(1) {
   position: absolute;
   display: none;
-  transition: .3s;
+  transition: 0.3s;
 }
-.favorited svg:nth-child(2){
+.favorited svg:nth-child(2) {
   position: absolute;
   fill: #111;
-  transition: .3s;
+  transition: 0.3s;
 }
-.favorited:hover svg:nth-child(1){
+.favorited:hover svg:nth-child(1) {
   fill: #111;
   display: block;
-  transition: .3s;
+  transition: 0.3s;
 }
 /* .item .desc .price-fav .fav .favorited:hover svg:nth-child(2){
   fill: #fff;
@@ -305,25 +330,25 @@ header .user {
   width: 24px;
   cursor: pointer;
 } */
-.item .desc .price-fav .fav .favorites{
+.item .desc .price-fav .fav .favorites {
   width: 24px;
   cursor: pointer;
 }
-.item .desc .price-fav .fav .favorites svg:nth-child(1){
+.item .desc .price-fav .fav .favorites svg:nth-child(1) {
   position: absolute;
   fill: #111;
-  transition: .3s;
+  transition: 0.3s;
 }
-.item .desc .price-fav .fav .favorites svg:nth-child(2){
+.item .desc .price-fav .fav .favorites svg:nth-child(2) {
   position: absolute;
   display: none;
-  transition: .3s;
+  transition: 0.3s;
 }
-.item .desc .price-fav .fav .favorites:hover svg:nth-child(1){
+.item .desc .price-fav .fav .favorites:hover svg:nth-child(1) {
   fill: #fff;
   display: none;
 }
-.item .desc .price-fav .fav .favorites:hover svg:nth-child(2){
+.item .desc .price-fav .fav .favorites:hover svg:nth-child(2) {
   fill: #111;
   display: block;
 }
@@ -401,31 +426,31 @@ header .user {
 }
 .buttons a:hover {
   border: #111 solid 1px;
-}.buttons a:hover .container .description svg{
+}
+.buttons a:hover .container .description svg {
   display: block;
 }
 .buttons a:nth-child(3n + 0) {
   margin-right: 0;
 }
-.buttons a .container  {
+.buttons a .container {
   display: flex;
   width: 100%;
   margin: 32px 32px 32px 32px;
   align-items: center;
 }
-.buttons a .container .description{
+.buttons a .container .description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-
 }
-.buttons a .container .description svg{
-display: none;
+.buttons a .container .description svg {
+  display: none;
 }
 
 .buttons a .container h4 {
-  font-family: 'firaGO-med';
+  font-family: "firaGO-med";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -433,7 +458,7 @@ display: none;
   margin-bottom: 4px;
 }
 .buttons a .container p {
-  font-family: 'firaGO-regular';
+  font-family: "firaGO-regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -465,39 +490,38 @@ display: none;
   border: #ff5733 solid 1px;
 }
 
-.brands{
+.brands {
   width: 1300px;
   margin: 0 auto 120px auto;
-
 }
-.brands .con{
+.brands .con {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.brands .con .text{
+.brands .con .text {
   width: 420px;
 }
-.brands .con .text h3{
-  font-family: 'firaGO-med';
+.brands .con .text h3 {
+  font-family: "firaGO-med";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   font-feature-settings: "case" on;
   margin-bottom: 16px;
 }
-.brands .con .text p{
-  font-family: 'firaGO-regular';
+.brands .con .text p {
+  font-family: "firaGO-regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
   color: #999999;
 }
-.brands .con button{
+.brands .con button {
   padding: 16px 32px;
   height: 100%;
-  font-family: 'firaGO-med';
+  font-family: "firaGO-med";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -510,8 +534,7 @@ display: none;
   margin: 0 auto;
   width: 1300px;
   height: 400px;
-  background-color: #D8D2BF;
-  ;
+  background-color: #d8d2bf;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -548,44 +571,44 @@ display: none;
   cursor: pointer;
 }
 
-footer{
+footer {
   width: 100%;
   height: 100%;
   background: #111;
   color: white;
   padding: 80px 0;
 }
-footer .contain{
+footer .contain {
   margin: 0 auto;
   width: 1300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-footer .contain .contacts{
+footer .contain .contacts {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
 }
-footer .contain .contacts li a{
+footer .contain .contacts li a {
   margin-left: 40px;
-  font-family: 'firaGO-regular';
+  font-family: "firaGO-regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
 }
-footer .contain .contacts li:nth-child(1){
+footer .contain .contacts li:nth-child(1) {
   margin-left: 0px;
 }
-footer .contain .items{
+footer .contain .items {
   display: flex;
   justify-content: center;
   margin-bottom: 44px;
 }
-footer .contain .items li a{
+footer .contain .items li a {
   margin-left: 40px;
-  font-family: 'firaGO-med';
+  font-family: "firaGO-med";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -593,6 +616,6 @@ footer .contain .items li a{
   font-variant-caps: all-small-caps;
   font-feature-settings: "case" on;
 }
-footer .contain svg{
+footer .contain svg {
   margin: 16px auto;
 }
