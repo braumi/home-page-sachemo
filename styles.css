@@ -73,6 +73,12 @@ header .search {
   border-left: 1px #ebebeb solid;
   border-right: 1px #ebebeb solid;
 }
+header .search svg {
+  cursor: pointer;
+}
+header .searching svg {
+  margin-left: 40px;
+}
 header .search input,
 header .search button {
   display: none;
@@ -96,7 +102,7 @@ header .searching input:focus {
 }
 header .searching button {
   display: block;
-  margin: 0 20px 0 15px;
+  margin: 0 40px 0 15px;
   background: none;
   cursor: pointer;
 }
