@@ -72,12 +72,10 @@ header .cart,
 header .search {
   border-left: 1px #ebebeb solid;
   border-right: 1px #ebebeb solid;
+  padding: 0 40px;
 }
 header .search svg {
   cursor: pointer;
-}
-header .searching svg {
-  margin-left: 40px;
 }
 header .search input,
 header .search button {
@@ -102,7 +100,7 @@ header .searching input:focus {
 }
 header .searching button {
   display: block;
-  margin: 0 40px 0 15px;
+  margin-left:15px;
   background: none;
   cursor: pointer;
 }
