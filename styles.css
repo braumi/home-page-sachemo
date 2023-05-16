@@ -98,12 +98,12 @@ header .searching input:focus{
   outline: none;
   color: #111;
 }
-/* header .searching button {
+header .searching button {
   display: block;
   margin-left: 15px;
   background: none;
   cursor: pointer;
-} */
+}
 .user h3 {
   font-size: 14px;
   font-weight: 400;
