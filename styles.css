@@ -94,16 +94,16 @@ header .searching input {
   color: #999999;
   border: none;
 }
-header .searching input:focus {
+header .searching input:focus{
   outline: none;
   color: #111;
 }
-header .searching button {
+/* header .searching button {
   display: block;
   margin-left: 15px;
   background: none;
   cursor: pointer;
-}
+} */
 .user h3 {
   font-size: 14px;
   font-weight: 400;
@@ -160,7 +160,7 @@ header .user {
 }
 
 .swiper {
-  width: 1400px;
+  width: 1300px;
   height: 500px;
   margin-top: 20px;
 }
@@ -533,6 +533,24 @@ header .user {
   font-feature-settings: "case" on;
   background-color: #111;
   cursor: pointer;
+}
+.brands .list{
+  width: 100%;
+  overflow: auto;
+}
+.brands ul{
+  display: flex;
+  overflow: auto;
+  width: 200%;
+}
+.brands .list::-webkit-scrollbar{
+  display: none;
+}
+.brands ul li{
+  margin-right: 24px;
+  width: 197px;
+  height: 80px;
+  background-color: #d9d9d9;
 }
 .know-more {
   margin: 0 auto;

@@ -49,6 +49,20 @@ document.querySelector(".search button").addEventListener("click", () =>{
 }
 )
 
+let brands = document.querySelector('.list'); 
+
+window.addEventListener('scroll', function(){
+  let value = window.scrollY;
+  let value2 = brands.scrollLeft;
+  if(value>2700){
+    console.log(value);
+    console.log(value2);
+    brands.scrollLeft = (value-2700)*.5;
+  }
+
+}
+)
+
 
 
 
