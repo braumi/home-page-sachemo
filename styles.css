@@ -496,7 +496,7 @@ header .user {
 
 .brands {
   width: 1300px;
-  margin: 0 auto 120px auto;
+  margin: 0 auto 60px auto;
 }
 .brands .con {
   display: flex;
@@ -534,19 +534,20 @@ header .user {
   background-color: #111;
   cursor: pointer;
 }
-.brands .list{
+.brand-list{
+  margin-bottom: 60px;
   width: 100%;
   overflow: auto;
 }
-.brands ul{
+.brand-list ul{
   display: flex;
   overflow: auto;
   width: 200%;
 }
-.brands .list::-webkit-scrollbar{
+ .brand-list::-webkit-scrollbar{
   display: none;
 }
-.brands ul li{
+.brand-list ul li{
   margin-right: 24px;
   width: 197px;
   height: 80px;

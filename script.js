@@ -49,7 +49,7 @@ document.querySelector(".search button").addEventListener("click", () =>{
 }
 )
 
-let brands = document.querySelector('.list'); 
+let brands = document.querySelector('.brand-list'); 
 
 window.addEventListener('scroll', function(){
   let value = window.scrollY;
