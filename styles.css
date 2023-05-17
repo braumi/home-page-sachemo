@@ -535,7 +535,7 @@ header .user {
   cursor: pointer;
 }
 .brand-list {
-  margin-bottom: 60px;
+  margin-bottom: 120px;
   width: 100%;
   overflow: auto;
 }
