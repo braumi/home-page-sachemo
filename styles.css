@@ -94,7 +94,7 @@ header .searching input {
   color: #999999;
   border: none;
 }
-header .searching input:focus{
+header .searching input:focus {
   outline: none;
   color: #111;
 }
@@ -534,20 +534,20 @@ header .user {
   background-color: #111;
   cursor: pointer;
 }
-.brand-list{
+.brand-list {
   margin-bottom: 60px;
   width: 100%;
   overflow: auto;
 }
-.brand-list ul{
+.brand-list ul {
   display: flex;
   overflow: auto;
   width: 200%;
 }
- .brand-list::-webkit-scrollbar{
+.brand-list::-webkit-scrollbar {
   display: none;
 }
-.brand-list ul li{
+.brand-list ul li {
   margin-right: 24px;
   width: 197px;
   height: 80px;
