@@ -872,11 +872,15 @@ footer .contain svg {
   .item-list2 .item img {
     height: 220px;
   }
+
   .item .desc .price-fav .fav {
     width: 68px;
     display: flex;
     justify-content: space-between;
     transform: translateY(0px);
+  }
+  .item:hover .fav svg{
+    fill: white;
   }
 
   .ad {
