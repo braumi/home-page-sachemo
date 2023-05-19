@@ -55,8 +55,6 @@ window.addEventListener('scroll', function(){
   let value = window.scrollY;
   let value2 = brands.scrollLeft;
   if(value>2700){
-    console.log(value);
-    console.log(value2);
     brands.scrollLeft = (value-2700)*.5;
   }
 
@@ -64,5 +62,18 @@ window.addEventListener('scroll', function(){
 )
 
 
+let item_scroll = document.querySelector('.main-body1 .container');
+let scroller = document.querySelector('.scroller');
+item_scroll.scrollLeft = 10000;
+let max_value = item_scroll.scrollLeft;
+console.log(max_value);
+item_scroll.scrollLeft = 0;
 
 
+item_scroll.addEventListener('scroll', function(){
+  const width = Math.max( document.querySelector('.main-body1 .container').scrollLeft);
+  let value = item_scroll.scrollLeft;
+  console.log(width);
+  console.log(value);
+  scroller.style.width =  4 + 56*value/max_value + 'px';
+})

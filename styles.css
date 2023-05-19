@@ -42,31 +42,65 @@ b {
 header {
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   height: 70px;
   background: white;
   border-bottom: 1px #ebebeb solid;
   z-index: 1000;
 }
-header .hl,
-header .hr {
-  display: flex;
-}
 
-.hl div,
-.hr div {
+
+.middle div,
+.lan,
+.cart,
+.user,
+.search,
+.home,
+.home2 {
   width: 104px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
+  height: 100%;
 }
-.hl .lan {
+header .home{
+  position: absolute;
+  left: 0px;
+}
+header .home2{
+  display: none;
+}
+header .search{
+  position: absolute;
+  left: 104px;
+}
+header .user{
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+header .cart{
+  position: absolute;
+  right: 189px;
+}
+.middle .lan {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+  position: absolute;
+  left: 214px;
+}
+.middle .fav {
+  position: absolute;
+  right: 289px;
+}
+.middle .fav a {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .cart,
 header .search {
@@ -104,6 +138,9 @@ header .searching button {
   background: none;
   cursor: pointer;
 }
+.user svg {
+  display: none;
+}
 .user h3 {
   font-size: 14px;
   font-weight: 400;
@@ -120,13 +157,11 @@ header .cart h4 {
   margin-left: 8px;
   font-size: 13px;
 }
-header .logo {
+header .middle svg {
   position: absolute;
-  display: flex;
-  align-items: center;
   width: 100%;
-  height: 70px;
-  justify-content: center;
+  top: 20px;
+  margin: 0 auto;
   z-index: 1;
 }
 header .user {
@@ -362,6 +397,15 @@ header .user {
   width: 1300px;
   margin: 0 auto;
 }
+.item-list2 {
+  display: flex;
+  margin-top: 40px;
+  width: 1300px;
+  margin: 0 auto;
+}
+.main-body1 .bck{
+  display: none;
+}
 .main-body1,
 .main-body2 {
   padding-bottom: 120px;
@@ -469,7 +513,7 @@ header .user {
 }
 
 .buttons a .container .logoS {
-  height: 56px;
+  height: 52px;
   width: 56px;
   border-radius: 100px;
   border: 1px #111 solid;
@@ -497,11 +541,13 @@ header .user {
 .brands {
   width: 1300px;
   margin: 0 auto 60px auto;
+  position: relative;
 }
 .brands .con {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 500px;
 }
 .brands .con .text {
   width: 420px;
@@ -522,9 +568,11 @@ header .user {
   line-height: 140%;
   color: #999999;
 }
-.brands .con button {
+.brands button {
+  position: absolute;
+  right: 0px;
+  top: 26px;
   padding: 16px 32px;
-  height: 100%;
   font-family: "firaGO-med";
   font-style: normal;
   font-weight: 300;
@@ -641,4 +689,263 @@ footer .contain .items li a {
 }
 footer .contain svg {
   margin: 16px auto;
+}
+
+@media (max-width: 500px) {
+  body{
+    overflow-x: hidden;
+  }
+  header {
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    height: 70px;
+  }
+  .middle {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    border-bottom: #e6e6e6 solid 1px;
+    background: white;
+  }
+  header .middle svg {
+    position: absolute;
+    left: 20px;
+    width: 155px;
+  }
+  .middle div {
+    width: 64px;
+    height: 60px;
+  }
+  header .middle .fav {
+    position: absolute;
+    right: 0px;
+  }
+  header .middle .fav svg{
+    width: 24px;
+  }
+  .middle .lan {
+    position: absolute;
+    right: 64px;
+    left: auto;
+  }
+  .middle .lan a {
+    width: 100%;
+    text-align: center;
+    border-right: #e6e6e6 solid 1px;
+  }
+  .sec-header {
+    display: none;
+  }
+  header  .home {
+    width: 84px;
+  }
+  header  .home svg {
+    width: 84px;
+    border-right: #e6e6e6 solid 1px;
+  }
+  header .user h3 {
+    display: none;
+  }
+  header .user svg {
+    display: block;
+  }
+  header .user {
+    width: 24px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 110px;
+  }
+  header  .cart h4{
+    display: none;
+  }
+  header .cart{
+    position: absolute;
+    right: 30px;
+    border: none;
+    height: 70px;
+    width: 50px;
+    padding: 0;
+  }
+  header .cart a{
+    background: #E6E1D4;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .search{
+    border: none;
+    position: absolute;
+    right: 174px;
+    left: auto;
+    width: 24px;
+    padding: 0;
+  }
+  header .home2{
+    display: flex;
+    position: absolute;
+    right: 238px;
+    height: 70px;
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .home2 div{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #6E20C9;  
+    margin-top: 4px;
+  }
+
+
+
+
+
+  .swiper{
+    width: 335px;
+    height: 300px;
+  }
+
+
+
+  .main-body2,
+  .main-body3{
+    width: 335px;
+    margin: 0 auto;
+  }
+  .main-body1 h1,
+  .main-body2 h1,
+  .main-body3 h1{
+    font-size: 14px;
+    margin-bottom: 28px;
+    width: auto;
+  }
+  .main-body1{
+    width: 100%;
+    padding-left: 20px;  
+  }
+  .main-body1 .container{
+    width: 100%;
+    overflow-x: auto;
+  }.main-body1 .container::-webkit-scrollbar{
+    display: none;
+  }
+  .main-body1 .bck{
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #e6e6e6;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+  .main-body1 .bck .scroller{
+    content: ' ';
+    height: 2px;
+    width: 0px;
+    background: #111;
+  }
+  .main-body2{
+    width: 100%;
+    height: 1620px;
+    padding-bottom: 0;
+  }
+  .main-body2 .backg{
+    width: 100%;
+  }
+  .item-list2{
+    width: 335px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .main-body2 h1{
+    margin-left: 20px;
+  }
+  .item-list2 .item{
+    width: 335px;
+    margin-bottom: 32px;
+  }
+  .item-list2 .item img{
+    height: 220px;
+  }
+  .item .desc .price-fav .fav{
+    width: 68px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(0px);
+  }
+
+  .ad{
+    width: 335px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .buttons{
+    width: 335px;
+    margin: 60px auto;
+  }
+  .buttons a{
+    margin-right: 0;
+  }
+
+  .brands{
+    width: 355px;
+  }
+  .brands button{
+    position: absolute;
+    width: 335px;
+    height: 52px;
+    margin: 0 auto;
+    bottom: -232px;
+    top: auto;
+  }
+  .brand-list ul{
+    width: 3200px;
+  }
+  .know-more{
+    margin-top: 152px;
+    width: 335px;
+    height: 500px;
+    padding: 36px;
+  }
+  .know-more h1{
+    font: 24px;
+  }
+  .know-more p{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+    padding: 40px 0 110px 0;
+  }
+  footer .contain{
+    width: 100%;
+  }
+  footer .contain .contacts{
+    display: none;
+    margin: 0;
+  }
+  footer .contacts li{
+    display: none;
+    margin: 0;
+  }
+  footer .contain .items{
+    display: none;
+    margin: none;
+  }
+  footer .items li{
+    display: none;
+    margin: none;
+  }
 }
