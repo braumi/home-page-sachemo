@@ -910,13 +910,16 @@ footer .contain svg {
     margin-top: 152px;
     width: 335px;
     height: 500px;
-    padding: 36px;
+    padding: 40px;
   }
   .know-more h1 {
-    font: 24px;
+    font-size: 24px;
+    line-height: 120%;
   }
   .know-more p {
     width: 100%;
+    font-size: 14px;
+  
   }
 
   footer {
