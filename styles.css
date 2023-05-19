@@ -827,7 +827,7 @@ footer .contain svg {
     padding-left: 20px;
   }
   .main-body1 .container {
-    width: 100%;
+    width: 335px;
     overflow-x: auto;
   }
   .main-body1 .container::-webkit-scrollbar {
