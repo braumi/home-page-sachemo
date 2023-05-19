@@ -48,7 +48,6 @@ header {
   z-index: 1000;
 }
 
-
 .middle div,
 .lan,
 .cart,
@@ -63,23 +62,23 @@ header {
   z-index: 10;
   height: 100%;
 }
-header .home{
+header .home {
   position: absolute;
   left: 0px;
 }
-header .home2{
+header .home2 {
   display: none;
 }
-header .search{
+header .search {
   position: absolute;
   left: 104px;
 }
-header .user{
+header .user {
   position: absolute;
   right: 0px;
   top: 0;
 }
-header .cart{
+header .cart {
   position: absolute;
   right: 189px;
 }
@@ -403,7 +402,7 @@ header .user {
   width: 1300px;
   margin: 0 auto;
 }
-.main-body1 .bck{
+.main-body1 .bck {
   display: none;
 }
 .main-body1,
@@ -692,7 +691,7 @@ footer .contain svg {
 }
 
 @media (max-width: 500px) {
-  body{
+  body {
     overflow-x: hidden;
   }
   header {
@@ -722,7 +721,7 @@ footer .contain svg {
     position: absolute;
     right: 0px;
   }
-  header .middle .fav svg{
+  header .middle .fav svg {
     width: 24px;
   }
   .middle .lan {
@@ -738,10 +737,10 @@ footer .contain svg {
   .sec-header {
     display: none;
   }
-  header  .home {
+  header .home {
     width: 84px;
   }
-  header  .home svg {
+  header .home svg {
     width: 84px;
     border-right: #e6e6e6 solid 1px;
   }
@@ -760,10 +759,10 @@ footer .contain svg {
     position: absolute;
     right: 110px;
   }
-  header  .cart h4{
+  header .cart h4 {
     display: none;
   }
-  header .cart{
+  header .cart {
     position: absolute;
     right: 30px;
     border: none;
@@ -771,8 +770,8 @@ footer .contain svg {
     width: 50px;
     padding: 0;
   }
-  header .cart a{
-    background: #E6E1D4;
+  header .cart a {
+    background: #e6e1d4;
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -780,7 +779,7 @@ footer .contain svg {
     align-items: center;
     justify-content: center;
   }
-  header .search{
+  header .search {
     border: none;
     position: absolute;
     right: 174px;
@@ -788,7 +787,7 @@ footer .contain svg {
     width: 24px;
     padding: 0;
   }
-  header .home2{
+  header .home2 {
     display: flex;
     position: absolute;
     right: 238px;
@@ -798,48 +797,43 @@ footer .contain svg {
     flex-direction: column;
     justify-content: center;
   }
-  header .home2 div{
+  header .home2 div {
     width: 6px;
     height: 6px;
     border-radius: 3px;
-    background: #6E20C9;  
+    background: #6e20c9;
     margin-top: 4px;
   }
 
-
-
-
-
-  .swiper{
+  .swiper {
     width: 335px;
     height: 300px;
   }
 
-
-
   .main-body2,
-  .main-body3{
+  .main-body3 {
     width: 335px;
     margin: 0 auto;
   }
   .main-body1 h1,
   .main-body2 h1,
-  .main-body3 h1{
+  .main-body3 h1 {
     font-size: 14px;
     margin-bottom: 28px;
     width: auto;
   }
-  .main-body1{
+  .main-body1 {
     width: 100%;
-    padding-left: 20px;  
+    padding-left: 20px;
   }
-  .main-body1 .container{
+  .main-body1 .container {
     width: 100%;
     overflow-x: auto;
-  }.main-body1 .container::-webkit-scrollbar{
+  }
+  .main-body1 .container::-webkit-scrollbar {
     display: none;
   }
-  .main-body1 .bck{
+  .main-body1 .bck {
     display: block;
     width: 60px;
     height: 2px;
@@ -848,60 +842,60 @@ footer .contain svg {
     top: 5px;
     right: 20px;
   }
-  .main-body1 .bck .scroller{
-    content: ' ';
+  .main-body1 .bck .scroller {
+    content: " ";
     height: 2px;
     width: 0px;
     background: #111;
   }
-  .main-body2{
+  .main-body2 {
     width: 100%;
     height: 1620px;
     padding-bottom: 0;
   }
-  .main-body2 .backg{
+  .main-body2 .backg {
     width: 100%;
   }
-  .item-list2{
+  .item-list2 {
     width: 335px;
     margin: 0 auto;
     flex-direction: column;
   }
-  .main-body2 h1{
+  .main-body2 h1 {
     margin-left: 20px;
   }
-  .item-list2 .item{
+  .item-list2 .item {
     width: 335px;
     margin-bottom: 32px;
   }
-  .item-list2 .item img{
+  .item-list2 .item img {
     height: 220px;
   }
-  .item .desc .price-fav .fav{
+  .item .desc .price-fav .fav {
     width: 68px;
     display: flex;
     justify-content: space-between;
     transform: translateY(0px);
   }
 
-  .ad{
+  .ad {
     width: 335px;
     height: 300px;
     margin: 0 auto;
   }
 
-  .buttons{
+  .buttons {
     width: 335px;
     margin: 60px auto;
   }
-  .buttons a{
+  .buttons a {
     margin-right: 0;
   }
 
-  .brands{
+  .brands {
     width: 355px;
   }
-  .brands button{
+  .brands button {
     position: absolute;
     width: 335px;
     height: 52px;
@@ -909,42 +903,42 @@ footer .contain svg {
     bottom: -232px;
     top: auto;
   }
-  .brand-list ul{
+  .brand-list ul {
     width: 3200px;
   }
-  .know-more{
+  .know-more {
     margin-top: 152px;
     width: 335px;
     height: 500px;
     padding: 36px;
   }
-  .know-more h1{
+  .know-more h1 {
     font: 24px;
   }
-  .know-more p{
+  .know-more p {
     width: 100%;
   }
 
-  footer{
+  footer {
     width: 100%;
     padding: 40px 0 110px 0;
   }
-  footer .contain{
+  footer .contain {
     width: 100%;
   }
-  footer .contain .contacts{
+  footer .contain .contacts {
     display: none;
     margin: 0;
   }
-  footer .contacts li{
+  footer .contacts li {
     display: none;
     margin: 0;
   }
-  footer .contain .items{
+  footer .contain .items {
     display: none;
     margin: none;
   }
-  footer .items li{
+  footer .items li {
     display: none;
     margin: none;
   }
