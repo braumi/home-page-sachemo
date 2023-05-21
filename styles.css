@@ -894,6 +894,16 @@ footer .contain svg {
     justify-content: space-between;
     transform: translateY(0px);
   }
+  .favorited:hover svg:nth-child(1) {
+    fill: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .favorites:hover svg:nth-child(2) {
+    fill: white;
+    display: block;
+    transition: 0.3s;
+  }
 
   .ad {
     width: 335px;
