@@ -825,13 +825,15 @@ footer .contain svg {
   }
   .main-body1 {
     width: 100%;
-    /* margin-left: 20px; */
+    margin-left: 20px;
     overflow: hidden;
     position: relative;
     margin-top: 60px;
   }
   .main-body1 h1{
     margin: 0 auto 40px 0;
+    display: inline-block;
+    height: 20px;
   }
   .main-body1 .container {
     overflow-x: auto;
@@ -844,9 +846,14 @@ footer .contain svg {
     width: 60px;
     height: 2px;
     background: #e6e6e6;
-    position: absolute;
-    top: 5px;
-    right: 20px;
+    display: inline-block;
+  }
+  .main-body1 .cont{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    padding-right: 40px;
   }
   .main-body1 .bck .scroller {
     content: " ";
