@@ -585,6 +585,7 @@ header .user {
   margin-bottom: 120px;
   width: 100%;
   overflow: auto;
+  pointer-events: none;
 }
 .brand-list ul {
   display: flex;
@@ -824,7 +825,7 @@ footer .contain svg {
   }
   .main-body1 {
     width: 100%;
-    padding-left: 20px;
+    /* margin-left: 20px; */
     overflow: hidden;
     position: relative;
     margin-top: 60px;
@@ -866,6 +867,9 @@ footer .contain svg {
     margin: 0 auto;
     flex-direction: column;
   }
+  .main-body3 .item-list2 {
+    width: 335px;
+  }
   .main-body2 h1 {
     margin-left: 20px;
   }
@@ -899,7 +903,11 @@ footer .contain svg {
   }
 
   .brands {
-    width: 355px;
+    width: 335px;
+  }
+  .brands .con{
+    width: 335px;
+    margin: 0;
   }
   .brands button {
     position: absolute;
@@ -908,6 +916,7 @@ footer .contain svg {
     margin: 0 auto;
     bottom: -232px;
     top: auto;
+    right: auto;
   }
   .brand-list ul {
     width: 3200px;
