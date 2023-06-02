@@ -197,6 +197,7 @@ header .user {
   width: 1300px;
   height: 500px;
   margin-top: 20px;
+  z-index: 1;
 }
 
 .swiper-slide {
@@ -690,6 +691,29 @@ footer .contain .items li a {
 footer .contain svg {
   margin: 16px auto;
 }
+.drop-down{
+  width: 100%;
+  display: none;
+}
+.drop-down ul li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  border-bottom: 1px #e6e6e6 solid;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.drop-down ul li h3{
+  font-family: "firaGO-semibold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 22px;
+  font-variant-caps: all-small-caps;
+  font-feature-settings: "case" on;
+}
 
 @media (max-width: 500px) {
   body {
@@ -976,5 +1000,25 @@ footer .contain svg {
   footer .items li {
     display: none;
     margin: none;
+  }
+  .drop-down{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.9);
+    z-index: 2;
+  }
+  .drop-down ul{
+    position: absolute;
+    background: white;
+    width: 100%;
+    bottom: 0;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .drop-down ul li:last-child{
+    color: #6e20c9;
+    margin-bottom: 90px;
+    border: none;
   }
 }
